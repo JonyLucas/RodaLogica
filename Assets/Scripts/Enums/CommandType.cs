@@ -6,7 +6,7 @@ namespace Game.Enums
     public enum CommandType
     {
         MoveCommand = 0,
-        TurnRightCommand = 1,
-        TurnLeftCommand = 2
+        TurnClockwiseCommand = 1,
+        TurnAntiClockwiseCommand = 2
     }
 }

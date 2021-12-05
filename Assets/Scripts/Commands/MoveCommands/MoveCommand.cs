@@ -13,19 +13,15 @@ namespace Game.Commands.MoveCommands
             var moveScript = gameObject.GetComponent<PlayerMovement>();
             if (ExecutionCodition(moveScript))
             {
-                moveScript.Move();
+                moveScript.Translate();
             }
         }
 
-        protected bool ExecutionCodition(PlayerMovement moveScript)
+        private bool ExecutionCodition(PlayerMovement moveScript)
         {
             if (moveScript != null)
             {
-                //var moveScript = gameObject.GetComponent<HeadMovement>();
-                //var snakeMoveDirection = moveScript.MoveDirection;
-                //var isValidDirection = snakeMoveDirection != MoveDirection && snakeMoveDirection != MoveDirection * (-1);
-                //return isValidDirection && moveScript.CanChangeDirection;
-                return true;
+                return !moveScript.HasFailed();
             }
 
             return false;

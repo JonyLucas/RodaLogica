@@ -18,6 +18,9 @@ namespace Game.Player.Movement
         [SerializeField]
         protected Sprite _down;
 
+        [SerializeField]
+        private Vector3 _startingPosition;
+
         private bool _failed = false;
 
         private float _speed = 1;
@@ -36,15 +39,10 @@ namespace Game.Player.Movement
         private void Awake()
         {
             renderer = GetComponent<SpriteRenderer>();
+            transform.position = _startingPosition;
         }
 
-        public void Move()
-        {
-            Translate();
-            Rotate();
-        }
-
-        private void Translate()
+        public void Translate()
         {
             var newPosition = transform.position;
             var speedVector = _moveDirection * _speed;
@@ -53,9 +51,31 @@ namespace Game.Player.Movement
             transform.position = newPosition;
         }
 
-        // Change the player's sprites
-        private void Rotate()
+        public void Rotate(bool isClockwise)
         {
+            if (isClockwise)
+            {
+                _moveDirection = _moveDirection.RotateClockwise();
+            }
+            else
+            {
+                _moveDirection = _moveDirection.RotateAntiClockwise();
+            }
+
+            var normalizedVector = _moveDirection.GetProminentVectorComponent();
+            // Change sprites
+            if (normalizedVector == Vector2.up)
+            {
+            }
+            else if (normalizedVector == Vector2.right)
+            {
+            }
+            else if (normalizedVector == Vector2.down)
+            {
+            }
+            else
+            {
+            }
         }
 
         public bool HasFailed()

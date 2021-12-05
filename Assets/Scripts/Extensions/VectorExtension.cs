@@ -25,5 +25,21 @@ namespace Game.Extensions
                 return vector.y > 0 ? Vector2.up : Vector2.down;
             }
         }
+
+        public static Vector2 RotateClockwise(this Vector2 vector)
+        {
+            var newVector = Vector2.zero;
+            newVector.x = vector.y;
+            newVector.y = -vector.x;
+            return newVector;
+        }
+
+        public static Vector2 RotateAntiClockwise(this Vector2 vector)
+        {
+            var newVector = Vector2.zero;
+            newVector.x = -vector.y;
+            newVector.y = vector.x;
+            return newVector;
+        }
     }
 }
