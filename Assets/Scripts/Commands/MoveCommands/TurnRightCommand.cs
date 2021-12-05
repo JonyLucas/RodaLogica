@@ -4,9 +4,11 @@ using UnityEngine;
 namespace Game.Commands.MoveCommands
 {
     [Serializable]
-    public class TurnRightCommand : MovementCommand
+    public class TurnRightCommand : BaseCommand
     {
-        public override Vector2 MoveDirection
-        { get { return Vector2.right; } }
+        public override void Execute(GameObject gameObject)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -53,16 +53,18 @@
     <UnityVersion>2020.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Commands\MoveCommands\MovementCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\BaseCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\MoveCommands\TurnUpCommand.cs" />
+    <Compile Include="Assets\Scripts\Commands\MoveCommands\MoveCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\MoveCommands\TurnRightCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\MoveCommands\TurnLeftCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\MoveCommands\TurnDownCommand.cs" />
-    <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Player Scripts\InputManager.cs" />
-    <Compile Include="Assets\Scripts\Player Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Extensions\VectorExtension.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Commands\BaseCommand.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\InputManager.cs" />
+    <Compile Include="Assets\Scripts\Commands\MoveCommands\TurnLeftCommand.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\PlayerSprites.cs" />
+    <Compile Include="Assets\Scripts\Events\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\Events\EventListener.cs" />
+    <Compile Include="Assets\Scripts\Enums\CommandType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

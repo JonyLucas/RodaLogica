@@ -1,56 +1,54 @@
 using Game.Commands;
+using Game.Commands.MoveCommands;
+using Game.Enums;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace Game.Player.PlayerInput
 {
-    /// <summary>
-    /// This class reads the player's input and execute the commands associated with the pressed key,
-    /// moving the player's snake or executing a powerup.
-    /// </summary>
     public class InputManager : MonoBehaviour
     {
-        private Dictionary<KeyCode, BaseCommand> _keyCommands;
+        private float _excuteRate = 1;
 
-        private List<KeyCode> _keys;
+        private GameObject _player;
 
-        private bool _isInitialized = false;
+        private List<BaseCommand> _commands = new List<BaseCommand>();
 
-        public void SetHeadAndControl(GameObject snake)
+        private void Awake()
         {
-            var snakeHead = snake.transform
-                .GetComponentsInChildren<Transform>()
-                .FirstOrDefault(x => x.CompareTag("SnakeHead"));
-            InitilizeCommands();
+            _player = GameObject.FindGameObjectWithTag("Player");
         }
 
-        private void InitilizeCommands()
+        public void AddCommand(int commandType)
         {
-            _keyCommands = new Dictionary<KeyCode, BaseCommand>();
-            _keys = new List<KeyCode>();
-
-            //_playerControl.Commands
-            //    .Where(x => x.AssociatedKey != KeyCode.None)
-            //    .ToList()
-            //    .ForEach(command =>
-            //    {
-            //        _keys.Add(command.AssociatedKey);
-            //        _keyCommands.Add(command.AssociatedKey, command);
-            //    });
-
-            _isInitialized = true;
-        }
-
-        private void Update()
-        {
-            if (_isInitialized)
+            Debug.Log("Add Command " + commandType);
+            if (commandType == (int)CommandType.MoveCommand)
             {
-                var key = _keys?.FirstOrDefault(x => Input.GetKeyDown(x));
-                if (key != null && key != KeyCode.None)
-                {
-                    //_keyCommands[key.Value].Execute(_snakeHead);
-                }
+                _commands.Add(new MoveCommand());
+            }
+            else if (commandType == (int)CommandType.TurnLeftCommand)
+            {
+                _commands.Add(new TurnLeftCommand());
+            }
+            else
+            {
+                _commands.Add(new TurnRightCommand());
+            }
+        }
+
+        public void RunCommands()
+        {
+            StartCoroutine(RunCommandCoroutine());
+        }
+
+        private IEnumerator RunCommandCoroutine()
+        {
+            foreach (var command in _commands)
+            {
+                Debug.Log("Run Command: " + command.GetType().Name);
+                yield return new WaitForSeconds(_excuteRate);
+                command.Execute(_player);
             }
         }
     }

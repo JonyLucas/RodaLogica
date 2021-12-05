@@ -3,23 +3,30 @@ using UnityEngine;
 
 namespace Game.Player.Movement
 {
-    public abstract class PlayerMovement : MonoBehaviour
+    public class PlayerMovement : MonoBehaviour
     {
         // Fields
-        //[SerializeField]
-        //private PlayerMoveData _moveData;
+        [SerializeField]
+        protected Sprite _forwardSprite;
 
-        //[SerializeField]
-        //protected PlayerSprites _sprites;
+        [SerializeField]
+        protected Sprite _backwardSprite;
 
-        private float _speed = 10;
+        [SerializeField]
+        protected Sprite _upwardSprite;
+
+        [SerializeField]
+        protected Sprite _down;
+
+        private bool _failed = false;
+
+        private float _speed = 1;
 
         private Vector2 _moveDirection = Vector2.right;
 
         protected new SpriteRenderer renderer;
 
         // Properties
-
         public Vector2 MoveDirection
         {
             get { return _moveDirection; }
@@ -28,31 +35,16 @@ namespace Game.Player.Movement
 
         private void Awake()
         {
-            // Sets the player's movement data
-            //_speed = _moveData.Speed;
-            //_stopMove = _moveData.StopMove;
-            //_xLimit = _moveData.XLimit;
-            //_yLimit = _moveData.YLimit;
-
-            //_canChangeDirection = true;
-
             renderer = GetComponent<SpriteRenderer>();
-
-            SetSprites();
-            SetNextBodyBlock();
         }
 
-        protected abstract void SetSprites();
-
-        public abstract void SetNextBodyBlock(GameObject nextBlock = null);
-
-        protected virtual void Movement()
+        public void Move()
         {
             Translate();
             Rotate();
         }
 
-        protected void Translate()
+        private void Translate()
         {
             var newPosition = transform.position;
             var speedVector = _moveDirection * _speed;
@@ -64,6 +56,11 @@ namespace Game.Player.Movement
         // Change the player's sprites
         private void Rotate()
         {
+        }
+
+        public bool HasFailed()
+        {
+            return _failed;
         }
     }
 }
