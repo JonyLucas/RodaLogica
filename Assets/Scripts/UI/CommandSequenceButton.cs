@@ -21,6 +21,9 @@ namespace Game.UI
 
         private bool _isRunning = false;
 
+        private Sprite _buttonSprite;
+        private Sprite _altSprite;
+
         private CommandSequenceButton _nextCommandButtonScript;
 
         public bool HasCommand
@@ -44,7 +47,9 @@ namespace Game.UI
         public void AddCommand(BaseCommand command)
         {
             _hasCommand = true;
-            _imageComponent.sprite = command.sprite;
+            _buttonSprite = command.sprite;
+            _imageComponent.sprite = _buttonSprite;
+            _altSprite = command.altSprite;
         }
 
         public void RemoveCommand()
@@ -74,10 +79,12 @@ namespace Game.UI
             if (_isRunning)
             {
                 _imageComponent.color = new Color(157, 157, 157);
+                _imageComponent.sprite = _altSprite;
             }
             else
             {
                 _imageComponent.color = Color.white;
+                _imageComponent.sprite = _buttonSprite;
                 if (_nextCommandButtonScript == null || !_nextCommandButtonScript.HasCommand)
                 {
                     var gameObj = GameObject.Find("BlockPanel");

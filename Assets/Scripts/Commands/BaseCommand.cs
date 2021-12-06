@@ -8,6 +8,8 @@ namespace Game.Commands
     {
         public Sprite sprite;
 
+        public Sprite altSprite;
+
         /// <summary>
         /// Execute an action implemented by the command pattern.
         /// </summary>

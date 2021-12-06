@@ -15,6 +15,9 @@ namespace Game.UI
         [SerializeField]
         private BaseCommandEvent _event;
 
+        [SerializeField]
+        private Sprite _altSprite;
+
         private BaseCommand _command;
 
         private void Start()
@@ -22,6 +25,7 @@ namespace Game.UI
             var imageComponent = GetComponent<Image>();
             _command = BaseCommandFactory.CreateCommand(_commandType);
             _command.sprite = imageComponent.sprite;
+            _command.altSprite = _altSprite;
         }
 
         public void AddCommand()
