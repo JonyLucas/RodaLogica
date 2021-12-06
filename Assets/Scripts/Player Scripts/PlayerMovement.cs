@@ -1,4 +1,5 @@
 using Game.Extensions;
+using Game.ScriptableObjects;
 using UnityEngine;
 
 namespace Game.Player.Movement
@@ -6,6 +7,9 @@ namespace Game.Player.Movement
     public class PlayerMovement : MonoBehaviour
     {
         // Fields
+        [SerializeField]
+        private PlayerSprites _sprites;
+
         [SerializeField]
         private Vector3 _startingPosition;
 
@@ -17,14 +21,17 @@ namespace Game.Player.Movement
 
         private readonly float _speed = 1;
 
+        private bool _isTurning = false;
+
         private Vector2 _moveDirection = Vector2.right;
+        private Vector2 _previousDirection = Vector2.zero;
 
         protected Sprite _forwardSprite;
         protected Sprite _backwardSprite;
         protected Sprite _upwardSprite;
         protected Sprite _down;
 
-        protected new SpriteRenderer renderer;
+        private SpriteRenderer _renderer;
 
         // Properties
         public Vector2 MoveDirection
@@ -35,7 +42,7 @@ namespace Game.Player.Movement
 
         private void Awake()
         {
-            renderer = GetComponent<SpriteRenderer>();
+            _renderer = GetComponent<SpriteRenderer>();
             transform.position = _startingPosition;
         }
 
@@ -46,10 +53,39 @@ namespace Game.Player.Movement
             newPosition.x += speedVector.x;
             newPosition.y += speedVector.y;
             transform.position = newPosition;
+
+            if (_isTurning)
+            {
+                _isTurning = false;
+                UpdateSprite();
+            }
+        }
+
+        private void UpdateSprite()
+        {
+            var normalizedVector = _moveDirection.GetProminentVectorComponent();
+            if (normalizedVector == Vector2.up)
+            {
+                _renderer.sprite = _sprites.playerMoveUp;
+            }
+            else if (normalizedVector == Vector2.right)
+            {
+                _renderer.sprite = _sprites.playerMoveRight;
+            }
+            else if (normalizedVector == Vector2.down)
+            {
+                _renderer.sprite = _sprites.playerMoveDown;
+            }
+            else
+            {
+                _renderer.sprite = _sprites.playerMoveLeft;
+            }
         }
 
         public void Rotate(bool isClockwise)
         {
+            _isTurning = true;
+            _previousDirection = _moveDirection.GetProminentVectorComponent();
             if (isClockwise)
             {
                 _moveDirection = _moveDirection.RotateClockwise();
@@ -60,18 +96,23 @@ namespace Game.Player.Movement
             }
 
             var normalizedVector = _moveDirection.GetProminentVectorComponent();
+
             // Change sprites
             if (normalizedVector == Vector2.up)
             {
+                _renderer.sprite = _previousDirection == Vector2.right ? _sprites.playerTurnUpRight : _sprites.playerTurnLeftUp;
             }
             else if (normalizedVector == Vector2.right)
             {
+                _renderer.sprite = _previousDirection == Vector2.up ? _sprites.playerTurnUpRight : _sprites.playerTurnRightDown;
             }
             else if (normalizedVector == Vector2.down)
             {
+                _renderer.sprite = _previousDirection == Vector2.right ? _sprites.playerTurnRightDown : _sprites.playerTurnDownLeft;
             }
             else
             {
+                _renderer.sprite = _previousDirection == Vector2.down ? _sprites.playerTurnDownLeft : _sprites.playerTurnLeftUp;
             }
         }
 

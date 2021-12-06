@@ -871,6 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ee00c36e439b14db44b654d2f6ea3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprites: {fileID: 11400000, guid: 7d88efb3652c64549b7f145ae55ed16e, type: 2}
   _startingPosition: {x: -7.5, y: -2.45, z: 0}
   _xLimit: 8.5
   _yLimit: 4.5

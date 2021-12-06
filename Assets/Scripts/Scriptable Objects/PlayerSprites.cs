@@ -7,11 +7,13 @@ namespace Game.ScriptableObjects
     {
         // Snake's body Sprites
 
-        public Sprite turnBodyFirstQuadrantSprite;
-        public Sprite turnBodySecondQuadrantSprite;
-        public Sprite turnBodyThirdQuadrantSprite;
-        public Sprite turnBodyFourthQuadrantSprite;
-        public Sprite bodyVerticalSprite;
-        public Sprite bodyHorizontalSprite;
+        public Sprite playerMoveLeft;
+        public Sprite playerMoveRight;
+        public Sprite playerMoveUp;
+        public Sprite playerMoveDown;
+        public Sprite playerTurnRightDown;
+        public Sprite playerTurnDownLeft;
+        public Sprite playerTurnLeftUp;
+        public Sprite playerTurnUpRight;
     }
 }
