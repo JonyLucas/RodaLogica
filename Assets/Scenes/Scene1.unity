@@ -10210,6 +10210,7 @@ GameObject:
   - component: {fileID: 688425194}
   - component: {fileID: 688425193}
   - component: {fileID: 688425195}
+  - component: {fileID: 688425196}
   m_Layer: 0
   m_Name: Biblioteca lado
   m_TagString: Untagged
@@ -10308,6 +10309,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &688425196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688425192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ed5db69c3b28d4794a35453df50903, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &689230143
 GameObject:
   m_ObjectHideFlags: 0
@@ -23219,6 +23232,7 @@ GameObject:
   - component: {fileID: 1795638029}
   - component: {fileID: 1795638028}
   - component: {fileID: 1795638030}
+  - component: {fileID: 1795638031}
   m_Layer: 0
   m_Name: Biblioteca
   m_TagString: Untagged
@@ -23317,6 +23331,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &1795638031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795638027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ed5db69c3b28d4794a35453df50903, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1799866711
 GameObject:
   m_ObjectHideFlags: 0

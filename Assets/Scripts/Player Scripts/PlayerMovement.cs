@@ -138,6 +138,8 @@ namespace Game.Player.Movement
         {
             _isMoving = false;
             transform.position = _startingPosition;
+            _moveDirection = Vector2.right;
+            _renderer.sprite = _sprites.playerMoveRight;
         }
     }
 }
