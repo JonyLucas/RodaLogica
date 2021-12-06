@@ -13,25 +13,17 @@ namespace Game.Player.Movement
         [SerializeField]
         private Vector3 _startingPosition;
 
-        [SerializeField]
-        private float _xLimit;
-
-        [SerializeField]
-        private float _yLimit;
-
         private readonly float _speed = 1;
+        private readonly float _moveRate = 0.05f;
 
         private bool _isTurning = false;
+        private bool _isMoving = false;
 
         private Vector2 _moveDirection = Vector2.right;
         private Vector2 _previousDirection = Vector2.zero;
 
         private Vector3 _previousPosition = Vector3.zero;
-
-        protected Sprite _forwardSprite;
-        protected Sprite _backwardSprite;
-        protected Sprite _upwardSprite;
-        protected Sprite _down;
+        private Vector3 _destinationPosition = Vector3.zero;
 
         private SpriteRenderer _renderer;
 
@@ -48,14 +40,32 @@ namespace Game.Player.Movement
             transform.position = _startingPosition;
         }
 
+        private void Update()
+        {
+            if (_isMoving)
+            {
+                var absDistance = _destinationPosition - transform.position;
+                if (Mathf.Abs(absDistance.magnitude) <= _moveRate)
+                {
+                    _isMoving = false;
+                    transform.position = _destinationPosition;
+                }
+                else
+                {
+                    transform.position = Vector3.Lerp(transform.position, _destinationPosition, _moveRate);
+                }
+            }
+        }
+
         public void Translate()
         {
+            _isMoving = true;
             _previousPosition = transform.position;
             var newPosition = transform.position;
             var speedVector = _moveDirection * _speed;
             newPosition.x += speedVector.x;
             newPosition.y += speedVector.y;
-            transform.position = newPosition;
+            _destinationPosition = newPosition;
 
             if (_isTurning)
             {
@@ -121,11 +131,12 @@ namespace Game.Player.Movement
 
         public void ReturnPosition()
         {
-            transform.position = _previousPosition;
+            _destinationPosition = _previousPosition;
         }
 
         public void ResetPosition()
         {
+            _isMoving = false;
             transform.position = _startingPosition;
         }
     }
