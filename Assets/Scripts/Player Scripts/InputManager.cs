@@ -14,7 +14,7 @@ namespace Game.Player.PlayerInput
         [SerializeField]
         private GameEvent _gameOverEvent;
 
-        private float _excuteRate = 1;
+        private float _excuteRate = 1f;
 
         private int _maxCountCommands = 24;
 
@@ -59,9 +59,9 @@ namespace Game.Player.PlayerInput
             for (int index = 0; index < size; index++)
             {
                 _commandExceuteEvent.OnOcurred(index);
-                yield return new WaitForSeconds(_excuteRate);
-
                 _commands[index].Execute(_player);
+
+                yield return new WaitForSeconds(_excuteRate);
                 _commandExceuteEvent.OnOcurred(index);
 
                 if (_victoryCondition)
