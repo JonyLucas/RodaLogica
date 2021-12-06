@@ -6,6 +6,8 @@ namespace Game.Commands
     [Serializable]
     public abstract class BaseCommand
     {
+        public Sprite sprite;
+
         /// <summary>
         /// Execute an action implemented by the command pattern.
         /// </summary>

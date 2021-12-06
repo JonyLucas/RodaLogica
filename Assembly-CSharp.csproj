@@ -68,6 +68,13 @@
     <Compile Include="Assets\Scripts\Scriptable Objects\Events\GenericGameEvent.cs" />
     <Compile Include="Assets\Scripts\Events\GenericEventListener.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\Events\IntGameEvent.cs" />
+    <Compile Include="Assets\Scripts\Events\IntEventListener.cs" />
+    <Compile Include="Assets\Scripts\UI\CommandSequenceButton.cs" />
+    <Compile Include="Assets\Scripts\UI\CommandSequencePanel.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\Events\BaseCommandEvent.cs" />
+    <Compile Include="Assets\Scripts\Events\BaseCommandListener.cs" />
+    <Compile Include="Assets\Scripts\UI\CommandButton.cs" />
+    <Compile Include="Assets\Scripts\Commands\BaseCommandFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

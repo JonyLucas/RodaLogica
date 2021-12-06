@@ -1,9 +1,11 @@
 using System;
+using UnityEngine;
 
-namespace Game.Observer.Listeners
+namespace Game.ScriptableObjects.Events
 {
     [Serializable]
-    public class IntGameEvent : GenericEventListener<int>
+    [CreateAssetMenu(fileName = "New Int Event", menuName = "Game Int Event", order = 55)]
+    public class IntGameEvent : GenericGameEvent<int>
     {
     }
 }
