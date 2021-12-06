@@ -53,7 +53,7 @@ namespace Game.Player.PlayerInput
         {
             foreach (var command in _commands)
             {
-                _event.OnOcurred(_commands.IndexOf(command));
+                //_event.OnOcurred(_commands.IndexOf(command));
                 yield return new WaitForSeconds(_excuteRate);
                 command.Execute(_player);
             }
