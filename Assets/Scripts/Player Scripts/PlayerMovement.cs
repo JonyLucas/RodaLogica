@@ -7,25 +7,24 @@ namespace Game.Player.Movement
     {
         // Fields
         [SerializeField]
-        protected Sprite _forwardSprite;
-
-        [SerializeField]
-        protected Sprite _backwardSprite;
-
-        [SerializeField]
-        protected Sprite _upwardSprite;
-
-        [SerializeField]
-        protected Sprite _down;
-
-        [SerializeField]
         private Vector3 _startingPosition;
 
-        private bool _failed = false;
+        [SerializeField]
+        private float _xLimit;
+
+        [SerializeField]
+        private float _yLimit;
 
         private float _speed = 1;
 
+        private bool _failed = false;
+
         private Vector2 _moveDirection = Vector2.right;
+
+        protected Sprite _forwardSprite;
+        protected Sprite _backwardSprite;
+        protected Sprite _upwardSprite;
+        protected Sprite _down;
 
         protected new SpriteRenderer renderer;
 
@@ -76,6 +75,11 @@ namespace Game.Player.Movement
             else
             {
             }
+        }
+
+        public void ResetPosition()
+        {
+            transform.position = _startingPosition;
         }
 
         public bool HasFailed()

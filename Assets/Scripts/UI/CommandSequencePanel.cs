@@ -1,6 +1,7 @@
 using Game.Commands;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Game.UI
@@ -17,6 +18,11 @@ namespace Game.UI
 
         public void UpdateButton(BaseCommand command)
         {
+            var buttonCommand = commandButtons.FirstOrDefault(x => !x.HasCommand);
+            if (buttonCommand != null)
+            {
+                buttonCommand.AddCommand(command);
+            }
         }
     }
 }
