@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - CommandSequence
+  - Objective
   layers:
   - Default
   - TransparentFX
