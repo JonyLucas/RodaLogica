@@ -30,5 +30,10 @@ namespace Game.UI
             var buttonScrip = buttonObject.GetComponent<CommandSequenceButton>();
             buttonScrip.RemoveCommand();
         }
+
+        public void RunningCommandButton(int index)
+        {
+            commandButtons[index].SwitchRunningState();
+        }
     }
 }

@@ -53,28 +53,30 @@
     <UnityVersion>2020.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Events\IntEventListener.cs" />
     <Compile Include="Assets\Scripts\Commands\MoveCommands\MoveCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\MoveCommands\TurnClockwiseCommand.cs" />
+    <Compile Include="Assets\Scripts\UI\CommandSequencePanel.cs" />
     <Compile Include="Assets\Scripts\Extensions\VectorExtension.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Commands\BaseCommand.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\Events\IntGameEvent.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\InputManager.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\Events\BaseCommandEvent.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\Events\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\Commands\BaseCommandFactory.cs" />
+    <Compile Include="Assets\Scripts\Events\GenericEventListener.cs" />
     <Compile Include="Assets\Scripts\Commands\MoveCommands\TurnAntiClockwiseCommand.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\PlayerSprites.cs" />
     <Compile Include="Assets\Scripts\Enums\CommandType.cs" />
-    <Compile Include="Assets\Scripts\Events\EventListener.cs" />
-    <Compile Include="Assets\Scripts\Scriptable Objects\Events\GenericGameEvent.cs" />
-    <Compile Include="Assets\Scripts\Events\GenericEventListener.cs" />
-    <Compile Include="Assets\Scripts\Scriptable Objects\Events\IntGameEvent.cs" />
-    <Compile Include="Assets\Scripts\Events\IntEventListener.cs" />
-    <Compile Include="Assets\Scripts\UI\CommandSequenceButton.cs" />
-    <Compile Include="Assets\Scripts\UI\CommandSequencePanel.cs" />
-    <Compile Include="Assets\Scripts\Scriptable Objects\Events\BaseCommandEvent.cs" />
-    <Compile Include="Assets\Scripts\Events\BaseCommandListener.cs" />
     <Compile Include="Assets\Scripts\UI\CommandButton.cs" />
-    <Compile Include="Assets\Scripts\Commands\BaseCommandFactory.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\Events\GenericGameEvent.cs" />
+    <Compile Include="Assets\Scripts\Events\BaseCommandListener.cs" />
+    <Compile Include="Assets\Scripts\UI\CommandSequenceButton.cs" />
+    <Compile Include="Assets\Scripts\Events\EventListener.cs" />
+    <Compile Include="Assets\Scripts\Props\CollisionDetection.cs" />
+    <Compile Include="Assets\Scripts\Props\ObjectiveContact.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -68,7 +68,7 @@ namespace Game.UI
             }
         }
 
-        public void IsRunning()
+        public void SwitchRunningState()
         {
             _isRunning = !_isRunning;
             if (_isRunning)
@@ -78,6 +78,11 @@ namespace Game.UI
             else
             {
                 _imageComponent.color = Color.white;
+                if (_nextCommandButtonScript == null || !_nextCommandButtonScript.HasCommand)
+                {
+                    var gameObj = GameObject.Find("BlockPanel");
+                    gameObj.SetActive(false);
+                }
             }
         }
     }

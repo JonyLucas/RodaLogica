@@ -10,20 +10,10 @@ namespace Game.Commands.MoveCommands
         public override void Execute(GameObject gameObject)
         {
             var moveScript = gameObject.GetComponent<PlayerMovement>();
-            if (ExecutionCodition(moveScript))
-            {
-                moveScript.Rotate(isClockwise: true);
-            }
-        }
-
-        private bool ExecutionCodition(PlayerMovement moveScript)
-        {
             if (moveScript != null)
             {
-                return !moveScript.HasFailed();
+                moveScript.Rotate(isClockwise: false);
             }
-
-            return false;
         }
     }
 }

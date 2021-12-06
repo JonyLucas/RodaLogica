@@ -15,9 +15,7 @@ namespace Game.Player.Movement
         [SerializeField]
         private float _yLimit;
 
-        private float _speed = 1;
-
-        private bool _failed = false;
+        private readonly float _speed = 1;
 
         private Vector2 _moveDirection = Vector2.right;
 
@@ -80,11 +78,6 @@ namespace Game.Player.Movement
         public void ResetPosition()
         {
             transform.position = _startingPosition;
-        }
-
-        public bool HasFailed()
-        {
-            return _failed;
         }
     }
 }

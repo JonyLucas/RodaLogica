@@ -11,10 +11,11 @@ namespace Game.Player.PlayerInput
         [SerializeField]
         private IntGameEvent _event;
 
-        [SerializeField]
         private float _excuteRate = 1;
 
         private int _maxCountCommands = 24;
+
+        private bool _arrivedObjective = false;
 
         private GameObject _player;
 
@@ -51,11 +52,19 @@ namespace Game.Player.PlayerInput
 
         private IEnumerator RunCommandCoroutine()
         {
-            foreach (var command in _commands)
+            var size = _commands.Count;
+            for (int index = 0; index < size; index++)
             {
-                //_event.OnOcurred(_commands.IndexOf(command));
+                _event.OnOcurred(index);
                 yield return new WaitForSeconds(_excuteRate);
-                command.Execute(_player);
+
+                _commands[index].Execute(_player);
+                _event.OnOcurred(index);
+
+                if (_arrivedObjective)
+                {
+                    break;
+                }
             }
         }
     }
