@@ -26,6 +26,8 @@ namespace Game.Player.Movement
         private Vector2 _moveDirection = Vector2.right;
         private Vector2 _previousDirection = Vector2.zero;
 
+        private Vector3 _previousPosition = Vector3.zero;
+
         protected Sprite _forwardSprite;
         protected Sprite _backwardSprite;
         protected Sprite _upwardSprite;
@@ -48,6 +50,7 @@ namespace Game.Player.Movement
 
         public void Translate()
         {
+            _previousPosition = transform.position;
             var newPosition = transform.position;
             var speedVector = _moveDirection * _speed;
             newPosition.x += speedVector.x;
@@ -114,6 +117,11 @@ namespace Game.Player.Movement
             {
                 _renderer.sprite = _previousDirection == Vector2.down ? _sprites.playerTurnDownLeft : _sprites.playerTurnLeftUp;
             }
+        }
+
+        public void ReturnPosition()
+        {
+            transform.position = _previousPosition;
         }
 
         public void ResetPosition()

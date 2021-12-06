@@ -9,13 +9,16 @@ namespace Game.Player.PlayerInput
     public class InputManager : MonoBehaviour
     {
         [SerializeField]
-        private IntGameEvent _event;
+        private IntGameEvent _commandExceuteEvent;
+
+        [SerializeField]
+        private GameEvent _gameOverEvent;
 
         private float _excuteRate = 1;
 
         private int _maxCountCommands = 24;
 
-        private bool _arrivedObjective = false;
+        private bool _victoryCondition = false;
 
         private GameObject _player;
 
@@ -34,7 +37,7 @@ namespace Game.Player.PlayerInput
 
         public void AddCommand(BaseCommand command)
         {
-            if (_commands.Count < _maxCountCommands)
+            if (_commands.Count <= _maxCountCommands)
             {
                 _commands.Add(command);
             }
@@ -55,17 +58,27 @@ namespace Game.Player.PlayerInput
             var size = _commands.Count;
             for (int index = 0; index < size; index++)
             {
-                _event.OnOcurred(index);
+                _commandExceuteEvent.OnOcurred(index);
                 yield return new WaitForSeconds(_excuteRate);
 
                 _commands[index].Execute(_player);
-                _event.OnOcurred(index);
+                _commandExceuteEvent.OnOcurred(index);
 
-                if (_arrivedObjective)
+                if (_victoryCondition)
                 {
                     break;
                 }
             }
+
+            if (!_victoryCondition)
+            {
+                _gameOverEvent.OnOcurred();
+            }
+        }
+
+        public void SetVictoryCondition()
+        {
+            _victoryCondition = true;
         }
     }
 }
