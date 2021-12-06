@@ -24,5 +24,11 @@ namespace Game.UI
                 buttonCommand.AddCommand(command);
             }
         }
+
+        public void RemoveCommandFromButton(GameObject buttonObject)
+        {
+            var buttonScrip = buttonObject.GetComponent<CommandSequenceButton>();
+            buttonScrip.RemoveCommand();
+        }
     }
 }

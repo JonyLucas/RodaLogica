@@ -325,7 +325,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 17044000}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 17043998}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &17044003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,9 +362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 4
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &20260361
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,10 +657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ee00c36e439b14db44b654d2f6ea3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _forwardSprite: {fileID: 0}
-  _backwardSprite: {fileID: 0}
-  _upwardSprite: {fileID: 0}
-  _down: {fileID: 0}
   _startingPosition: {x: -7.5, y: -2.45, z: 0}
   _xLimit: 8.5
   _yLimit: 4.5
@@ -1089,7 +1108,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 81068700}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 81068698}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &81068703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,9 +1145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 23
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &94074820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,7 +1267,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 94074822}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 94074820}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &94074825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1238,9 +1304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 16
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &124021387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,7 +1836,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 165591456}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 165591454}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &165591459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1784,9 +1873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 10
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &167488154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,9 +2090,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 20
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!114 &168006254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,7 +2135,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 168006255}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 168006251}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &168006255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,7 +2728,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 197308629}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 197308627}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &197308632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2630,9 +2765,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 17
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &216360189
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,6 +3814,7 @@ GameObject:
   - component: {fileID: 276493206}
   - component: {fileID: 276493205}
   - component: {fileID: 276493208}
+  - component: {fileID: 276493209}
   m_Layer: 5
   m_Name: Left Command Button
   m_TagString: Untagged
@@ -3762,6 +3897,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 276493209}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &276493206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3814,6 +3961,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _commandType: 2
   _event: {fileID: 11400000, guid: 07e585c7be6a7514189ef735641cfeae, type: 2}
+--- !u!82 &276493209
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276493203}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 722c8ac6a088eef4eaad868dae927b22, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &285825141
 GameObject:
   m_ObjectHideFlags: 0
@@ -6551,7 +6794,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 537363025}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 537363023}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &537363028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6564,9 +6831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 22
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &540031916
 GameObject:
   m_ObjectHideFlags: 0
@@ -6769,7 +7035,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 542598422}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 542598420}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &542598425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6782,9 +7072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 18
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &554020883
 GameObject:
   m_ObjectHideFlags: 0
@@ -6905,7 +7194,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 554020885}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 554020883}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &554020888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6918,9 +7231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 11
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &554948042
 GameObject:
   m_ObjectHideFlags: 0
@@ -7861,7 +8173,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 637166026}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 637166024}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &637166029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7874,9 +8210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 2
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &642487504
 GameObject:
   m_ObjectHideFlags: 0
@@ -8666,9 +9001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 21
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!114 &689230146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8712,7 +9046,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 689230147}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 689230143}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &689230147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9117,7 +9475,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 719142181}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 719142179}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &719142184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9130,9 +9512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 13
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1001 &724879681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9951,7 +10332,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 789446769}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 789446767}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &789446772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9964,9 +10369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 12
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &814746199
 GameObject:
   m_ObjectHideFlags: 0
@@ -10333,7 +10737,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 828436138}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 828436136}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &828436141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10346,9 +10774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 21
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &857020043
 GameObject:
   m_ObjectHideFlags: 0
@@ -11578,7 +12005,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 938845631}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 938845629}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &938845634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11591,9 +12042,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 20
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &940072831
 GameObject:
   m_ObjectHideFlags: 0
@@ -12370,7 +12820,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1054376560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1054376558}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1054376563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12383,9 +12857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 8
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &1061944897
 GameObject:
   m_ObjectHideFlags: 0
@@ -12399,6 +12872,7 @@ GameObject:
   - component: {fileID: 1061944900}
   - component: {fileID: 1061944899}
   - component: {fileID: 1061944902}
+  - component: {fileID: 1061944903}
   m_Layer: 5
   m_Name: Right Command Button
   m_TagString: Untagged
@@ -12481,6 +12955,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1061944903}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1061944900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12533,6 +13019,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _commandType: 1
   _event: {fileID: 11400000, guid: 07e585c7be6a7514189ef735641cfeae, type: 2}
+--- !u!82 &1061944903
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061944897}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 722c8ac6a088eef4eaad868dae927b22, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1065280988
 GameObject:
   m_ObjectHideFlags: 0
@@ -12981,7 +13563,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1098969610}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1098969608}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1098969613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12994,9 +13600,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 0
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &1101659551
 GameObject:
   m_ObjectHideFlags: 0
@@ -14093,7 +14698,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1259087156}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1259087154}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1259087159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14106,9 +14735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 1
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &1268319692
 GameObject:
   m_ObjectHideFlags: 0
@@ -14318,8 +14946,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1ade5c08d72934383ad76339b64186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _event: {fileID: 0}
   _excuteRate: 1
-  _maxCountCommads: 20
 --- !u!114 &1275254274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14509,9 +15137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 19
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!114 &1295199250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14555,7 +15182,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1295199251}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1295199247}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1295199251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15281,9 +15932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 16
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!114 &1366065777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15327,7 +15977,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1366065778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1366065774}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1366065778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15461,6 +16135,7 @@ GameObject:
   - component: {fileID: 1377156883}
   - component: {fileID: 1377156882}
   - component: {fileID: 1377156885}
+  - component: {fileID: 1377156886}
   m_Layer: 5
   m_Name: Move Command Button
   m_TagString: Untagged
@@ -15543,6 +16218,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1377156886}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1377156883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15595,6 +16282,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _commandType: 0
   _event: {fileID: 11400000, guid: 07e585c7be6a7514189ef735641cfeae, type: 2}
+--- !u!82 &1377156886
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377156880}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 722c8ac6a088eef4eaad868dae927b22, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1382448734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16282,9 +17065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 23
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!114 &1447323879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16328,7 +17110,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1447323880}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1447323876}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1447323880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16882,7 +17688,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1501046874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1501046872}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1501046877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16895,9 +17725,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 15
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &1503732676
 GameObject:
   m_ObjectHideFlags: 0
@@ -18193,9 +19022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 22
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!114 &1626597634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18239,7 +19067,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1626597635}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1626597631}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1626597635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18762,7 +19614,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1698596016}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1698596014}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1698596019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18775,9 +19651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 3
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &1718157178
 GameObject:
   m_ObjectHideFlags: 0
@@ -19144,7 +20019,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1743409556}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1743409554}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1743409559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19157,9 +20056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 14
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &1749991173
 GameObject:
   m_ObjectHideFlags: 0
@@ -19173,9 +20071,10 @@ GameObject:
   - component: {fileID: 1749991175}
   - component: {fileID: 1749991177}
   - component: {fileID: 1749991178}
+  - component: {fileID: 1749991179}
   m_Layer: 5
   m_Name: CommandSequencePanel
-  m_TagString: Untagged
+  m_TagString: CommandSequence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19309,6 +20208,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea8f349287c957489f080a7af27db86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1749991179
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749991173}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b5dce3086c750fc4badf3bf5664d8cc1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1757476947
 GameObject:
   m_ObjectHideFlags: 0
@@ -20098,9 +21093,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 18
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!114 &1862805847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20144,7 +21138,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1862805848}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1862805844}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1862805848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20214,11 +21232,11 @@ Transform:
   - {fileID: 1200759639}
   - {fileID: 1470665092}
   - {fileID: 724879682}
-  - {fileID: 427736587}
   - {fileID: 1193342608}
+  - {fileID: 427736587}
   - {fileID: 934800720}
-  - {fileID: 1382448735}
   - {fileID: 318608556}
+  - {fileID: 1382448735}
   - {fileID: 330468627}
   - {fileID: 1324006942}
   m_Father: {fileID: 0}
@@ -20590,7 +21608,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1903919001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1903918999}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1903919004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20603,9 +21645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 6
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &1908001743
 GameObject:
   m_ObjectHideFlags: 0
@@ -20618,6 +21659,7 @@ GameObject:
   - component: {fileID: 1908001747}
   - component: {fileID: 1908001746}
   - component: {fileID: 1908001745}
+  - component: {fileID: 1908001748}
   m_Layer: 5
   m_Name: Play Button
   m_TagString: Untagged
@@ -20700,6 +21742,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1908001748}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1908001746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20738,6 +21792,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908001743}
   m_CullTransparentMesh: 1
+--- !u!82 &1908001748
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908001743}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 722c8ac6a088eef4eaad868dae927b22, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1912733646
 GameObject:
   m_ObjectHideFlags: 0
@@ -20858,7 +22008,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1912733648}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1912733646}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1912733651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20871,9 +22045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 5
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &1914591557
 GameObject:
   m_ObjectHideFlags: 0
@@ -21076,7 +22249,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1924687864}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1924687862}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1924687867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21089,9 +22286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 9
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &1942034991
 GameObject:
   m_ObjectHideFlags: 0
@@ -21378,7 +22574,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1943738847}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1943738845}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1943738850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21391,9 +22611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 19
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &1952309015
 GameObject:
   m_ObjectHideFlags: 0
@@ -21609,9 +22828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 17
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!114 &1969388650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21655,7 +22873,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1969388651}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1969388647}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1969388651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23100,7 +24342,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2139605078}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1749991179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1749991178}
+        m_TargetAssemblyTypeName: Game.UI.CommandSequencePanel, Assembly-CSharp
+        m_MethodName: RemoveCommandFromButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2139605076}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2139605081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23113,9 +24379,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9dc98b205dc0429ef868b23629cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 7
   _event: {fileID: 11400000, guid: 4cd1d6734860eb64db449850a2572bef, type: 2}
-  _emptySpace: {fileID: 0}
+  _emptySpace: {fileID: 21300000, guid: 8d8b12a6e87995a4c8425f3a7deb9a29, type: 3}
 --- !u!1 &2146332822
 GameObject:
   m_ObjectHideFlags: 0

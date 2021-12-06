@@ -1,4 +1,5 @@
 using Game.Commands;
+using Game.ScriptableObjects.Events;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,24 +9,34 @@ namespace Game.Player.PlayerInput
     public class InputManager : MonoBehaviour
     {
         [SerializeField]
-        private float _excuteRate = 1;
+        private IntGameEvent _event;
 
         [SerializeField]
-        private int _maxCountCommads = 24;
+        private float _excuteRate = 1;
+
+        private int _maxCountCommands = 24;
 
         private GameObject _player;
 
-        private List<BaseCommand> _commands = new List<BaseCommand>();
-        private List<Sprite> _commandSprite = new List<Sprite>();
+        private readonly List<BaseCommand> _commands = new List<BaseCommand>();
 
         private void Awake()
         {
             _player = GameObject.FindGameObjectWithTag("Player");
+
+            var commandSequence = GameObject.FindGameObjectWithTag("CommandSequence");
+            if (commandSequence != null)
+            {
+                _maxCountCommands = commandSequence.transform.childCount;
+            }
         }
 
         public void AddCommand(BaseCommand command)
         {
-            _commands.Add(command);
+            if (_commands.Count < _maxCountCommands)
+            {
+                _commands.Add(command);
+            }
         }
 
         public void RemoveCommand(int index)
@@ -42,15 +53,10 @@ namespace Game.Player.PlayerInput
         {
             foreach (var command in _commands)
             {
-                Debug.Log("Run Command: " + command.GetType().Name);
+                _event.OnOcurred(_commands.IndexOf(command));
                 yield return new WaitForSeconds(_excuteRate);
                 command.Execute(_player);
             }
-        }
-
-        private Sprite GetSprite(int index)
-        {
-            return _commandSprite[index];
         }
     }
 }

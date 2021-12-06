@@ -7,7 +7,6 @@ namespace Game.UI
 {
     public class CommandSequenceButton : MonoBehaviour
     {
-        [SerializeField]
         private int _index;
 
         [SerializeField]
@@ -18,17 +17,28 @@ namespace Game.UI
 
         private Image _imageComponent;
 
-        private Transform _nextCommandButton;
-
         private bool _hasCommand = false;
+
+        private bool _isRunning = false;
+
+        private CommandSequenceButton _nextCommandButtonScript;
 
         public bool HasCommand
         { get { return _hasCommand; } }
 
+        public Sprite SpriteImage
+        { get { return _imageComponent.sprite; } }
+
         private void Start()
         {
             _imageComponent = GetComponent<Image>();
-            _nextCommandButton = transform.parent.transform.GetChild(_index + 1);
+            _index = transform.GetSiblingIndex();
+
+            if (_index < transform.parent.childCount - 1)
+            {
+                var nextCommandButton = transform.parent.transform.GetChild(_index + 1);
+                _nextCommandButtonScript = nextCommandButton.GetComponent<CommandSequenceButton>();
+            }
         }
 
         public void AddCommand(BaseCommand command)
@@ -45,11 +55,11 @@ namespace Game.UI
 
         public void UpdateNextButton()
         {
-            if (_nextCommandButton != null)
+            if (_nextCommandButtonScript != null)
             {
-                var buttonScript = _nextCommandButton.GetComponent<CommandSequenceButton>();
-                _imageComponent.sprite = buttonScript.GetSprite();
-                buttonScript.UpdateNextButton();
+                _imageComponent.sprite = _nextCommandButtonScript.SpriteImage;
+                _hasCommand = _nextCommandButtonScript.HasCommand;
+                _nextCommandButtonScript.UpdateNextButton();
             }
             else
             {
@@ -58,9 +68,17 @@ namespace Game.UI
             }
         }
 
-        public Sprite GetSprite()
+        public void IsRunning()
         {
-            return _imageComponent.sprite;
+            _isRunning = !_isRunning;
+            if (_isRunning)
+            {
+                _imageComponent.color = new Color(157, 157, 157);
+            }
+            else
+            {
+                _imageComponent.color = Color.white;
+            }
         }
     }
 }
