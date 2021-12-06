@@ -12,7 +12,7 @@ namespace Game.Commands.MoveCommands
             var moveScript = gameObject.GetComponent<PlayerMovement>();
             if (moveScript != null)
             {
-                moveScript.Rotate(isClockwise: false);
+                moveScript.Rotate(isClockwise: true);
             }
         }
     }
