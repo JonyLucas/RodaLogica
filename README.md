@@ -1,5 +1,9 @@
 # Roda Lógica
 
+Disponível em: https://jonylucas.itch.io/roda-lgica
+
+Vídeo de demonstração: https://youtu.be/jrjEmWUcouk
+
 PROPÓSITO DO JOGO: O game busca apresentar a problemática vivenciada pelos cadeirantes, de forma a sensibilizar o jogador em relação aos desafios enfrentados por essas pessoas, ao mesmo tempo em que ensina conceitos básicos de lógica, a partir de um conjunto de comandos e tarefas (objetivos), que devem ser cumpridos para avançar no game.
 
 GÊNERO: Puzzle/Educativo
